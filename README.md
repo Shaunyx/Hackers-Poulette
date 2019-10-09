@@ -2,11 +2,11 @@
 
 ![Logo of Socity, hackers poulette ](https://github.com/becodeorg/BXL-Johnson-4.14/blob/master/06-PHP/hackers_poulette/hackers-poulette-logo.png "Logo Socity")
 
-### La société _Hackers Poulette ™_ vend des kits d'accessoires Raspberry Pi
+#### La société _Hackers Poulette ™_ vend des kits d'accessoires Raspberry Pi
 
-### le but ici est de créer un formulaire & un page de reponse favorable ou non suivant le submit effectué.
+#### le but ici est de créer un formulaire & un page de reponse favorable ou non suivant le submit effectué.
 
-### un peu de visuel
+#### un peu de visuel
 
 ![form capture of screen](https://github.com/n48.png "Capture of screen")
 
@@ -15,7 +15,7 @@
 ![Answer refuse/error of form](https://github.com/n48.png "Capture of screen")
 
 
-## Check here ! 
+## [Check here !]() 
 
 ### Mockup and construction
 

@@ -1,8 +1,23 @@
 <?php
 /*Methode et condition ici*/
-$_name = $_POST['name'];
+$_Lastname = $_POST['lastname'];
+$_Firstname = $_POST['firstname'];
 $_bio = $_POST['bio'];
 $_age = $_POST['age'];
+$_gender = $_POST['Gender'];
+$_Email = $_POST['email'];
+
+
+/* verifier chaque élément avec des filtre */
+ function CleanUp($string){
+
+ return $string;
+}
+
+
+
+ /* verifie si il y a input ou non*/
+
 
 /*if(isset($_age) && isset($_name) && isset($_bio)){
 	$_name = Check_input($_name);
@@ -26,100 +41,112 @@ function Check_input($data) {
 }*/
 
 ?>  
-<div class="container">
-    <div class="row">
-        <div class="form offset-1 col-10">
-        <form method="post" action="form2.php">
 
-<!--Name and Lastname-->
-            <div class="row">
-                <div class="User col-5">
-                    <label  for="Lastname">Lastname</label>
-                    <input id="Lastname" type="text" name="lastname">
-                </div>
-                <div class="User col-5">
-                    <label  for="Firstname">Firstname</label>
-                    <input id="Firstname" type="text" name="firstname">
-                </div>
-            </div>
+<section class="container">
+    <section class="form-row">
+        <section class="form offset-1 col-10">
+        <h1>Formulaire</h1>
+
+        <form method="post" action="">
+            <section class="form-row">
+                <section class="col-6 md-4 mb-3">
+                <!---last name & first name--->
+                    <label for="validationDefault01">First name<span class="required">*</span></label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" name="firstname" required>
+                </section>
+                <section class="col-6 md-4 mb-3">
+                    <label for="validationDefault02">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" name="lastname" required>
+                </section>
+
+              <!--- Email -->
+                <section class="email  col-12">
+                    <label for="Email">Email<span class="required">*</span></label>
+                    <input class="form-control" id="Email" type="text" name="email" placeholder="name@example.com" name="email" required>
+                </section>
+            </section>
+              <!--- gender--->
+              <section class="form-row">
+                <section class="col-12 md-12 mb-3">
+                    <label for="Gender">Gender</label>
+                        <select class="form-control" name="Gender" id ="Gendre">
+                            <option  selected>choose ...</option>
+                            <?php
+                                $Topics = array('male'=>'male ','female'=>'female ','binary'=>'no-binary');
+                                foreach ($Topics as $key => $value)
+                                {
+                                echo "<option value='$key'>$value</option>";
+                                } 
+                            ?>
+                        </select>
+                    </section>
+                </section>
+            </section>
+            </section>
 
 
 
-<!--email-->
-            <div class="row">
-                <div class="email offset-1 col-5">
-                    <label for="Email">Email</label>
-                    <input id="Email" type="text" name="email">
-                </div>
-            </div>
-
-
-<!--Gender-->
-            <div class="row">
-                <div class="gender  col-5">    
-                    <input type="radio" name="Gender" value="male">Male
-                    <input type="radio" name="Gender" value="female">Female
-                    <input type="radio" name="Gender" value="no-binary">No-binary
-                </div>
-            </div>
-            <br/>
-
-
-
-
-
-<!--countries-->
-            <div class="row">
-                <div class="country  col-5">
-                    <label for ="Country">country ?</label>
-                    <br/>
-                    <select id ="Country">
+            <!--- city & state --->
+            <section class="form-row">
+              <section class="offset-1 col-4 md-3 mb-3">
+                <label for="validationDefault03">City</label>
+                <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+              </section>
+              <section class="col-6 md-3 mb-3">
+                <label for="validationDefault04">State</label>
+                <select class="form-control" name="validationDefault04" id ="Country" >
+                    <option  selected>choose ...</option>
                     <?php
                     $countries = array('BE'=>'Belgium','EN'=>'England','FR'=>'France','MA'=>'Madrid','IND'=>'India');
 
 	                foreach ($countries as $key => $value)
                     {
                     echo "<option value='$key'>$value</option>";
-		            $i++;
                     } 
 	                ?> 
                     </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="topics offset-1  col-5">
-                    <label for ="Topics"></label>
-                    <select id ="Topics">
+              </section>
+                <section class="offset-1 col-4 md-3 mb-3">
+                    <label for ="Topics">Un probleme ?</label>
+                    <select class="form-control" id ="Topics">
+                        <option  selected>choose ...</option>
                         <?php
-
-                        $Topics = array('Prob'=>'Problems ?','Sugg'=>'Suggestion ?','Love'=>'Love to share ?');
-
+                            $Topics = array('Prob'=>'Problems ','Sugg'=>'Suggestion ','Love'=>'Love to share ');
                         foreach ($Topics as $key => $value)
                         {
                         echo "<option value='$key'>$value</option>";
-                        $i++;
                         } 
                         ?>
                     </select>
-                </div>
-
-                <div class="Area  col-5">
-                <textarea name="bio"  id="" rows="3"  cols="30" form="usrform">Your bio here</textarea>
-                </div>
-            </div>
-            <br/>
-
-            
-
-<!--button-->
-            <div class="row">
-                <div class="button offset-3 col-5">
-                <input type="submit" value="Submit">                </div>
-            </div>
+                </section>
+                <section class="Area form-group col-6">
+                    <textarea name="bio" class="form-control" id="" rows="3" max-lenght="50" cols="30" placeholder="Ecrivez ici ..."></textarea>
+                </section>
+            </section>
+            </section>
+            <section class="form-group">
+              <section class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Done ?
+                </label>
+              </section>
+            </section>
+            <section class="form-group">
+              <section class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Really ?
+                </label>
+              </section>
+            </section>
+            <section class="form-group">
+              <section class="form-check3">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  ARE YOU SURE ?
+                </label>
+              </section>
+            </section>
+            <button class="btn " type="submit">Submit</button>
         </form>
-        </div>
-    </div>
-</div>
-
-<!--Formulaire ici-->
-

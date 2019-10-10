@@ -16,28 +16,32 @@ body{
 
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
-
-.form{
+.formulaire{
     display: block;
     text-align: center;
-    background-color:#15c5bd;
     color: #303030;
-    margin: 60px 50px 60px 50px;
-    height: 80%;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
 }
  .User{
      padding-top: 5rem;
-     padding-bottom: 3%;
+     padding-bottom: 3px;
      padding-left: 15%;
 
 
  }
 .email{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 40px;
+    padding-top: 3rem;
+    padding-bottom: 3%;
+    padding-left: 15%;
 
 
 }
@@ -52,13 +56,31 @@ body{
  
 }
 
-.button{
-    margin-left: 30%;
-    padding-bottom: 3%;
-    padding-top: 4%;
-
+.done{
+    padding-top: 15%;
 }
-.gender{
-    margin-left: 30%;
 
+.btn{
+    background-color: #15c5bd;
+    color: #303030;
+}
+
+.required {
+    color: red;
+  }
+
+.Area{
+    resize:both;
+}
+input:focus {
+    background-color: #15c5bd;
+  }
+  
+  h1{
+    padding-bottom: 30px;
+
+  }
+
+#invalidCheck{
+    padding-top: 5%;
 }

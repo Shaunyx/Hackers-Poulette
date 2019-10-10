@@ -9,9 +9,9 @@ $_Email = $_POST['email'];
 
 
 /* verifier chaque élément avec des filtre */
- function CleanUp($string){
+ function CleanUp($element){
 
- return $string;
+ return ctype_alpha($element);
 }
 
 
@@ -52,24 +52,24 @@ function Check_input($data) {
                 <section class="col-6 md-4 mb-3">
                 <!---last name & first name--->
                     <label for="validationDefault01">First name<span class="required">*</span></label>
-                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" name="firstname" required>
+                    <input type="text" class="form-control shadow p-1 mb-5 bg-white rounded" id="validationDefault01" placeholder="First name" name="firstname" required>
                 </section>
                 <section class="col-6 md-4 mb-3">
-                    <label for="validationDefault02">Last name</label>
-                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" name="lastname" required>
+                    <label for="validationDefault02">Last name<span class="required">*</span></label>
+                    <input type="text" class="form-control shadow p-1 mb-5 bg-white rounded" id="validationDefault02" placeholder="Last name" name="lastname" required>
                 </section>
 
               <!--- Email -->
                 <section class="email  col-12">
                     <label for="Email">Email<span class="required">*</span></label>
-                    <input class="form-control" id="Email" type="text" name="email" placeholder="name@example.com" name="email" required>
+                    <input class="form-control shadow p-1 mb-5 bg-white rounded" id="Email" type="text" name="email" placeholder="name@example.com" name="email" required>
                 </section>
             </section>
               <!--- gender--->
               <section class="form-row">
                 <section class="col-12 md-12 mb-3">
                     <label for="Gender">Gender</label>
-                        <select class="form-control" name="Gender" id ="Gendre">
+                        <select class="form-control shadow p-1 mb-5 bg-white rounded" name="Gender" id ="Gendre">
                             <option  selected>choose ...</option>
                             <?php
                                 $Topics = array('male'=>'male ','female'=>'female ','binary'=>'no-binary');
@@ -90,11 +90,11 @@ function Check_input($data) {
             <section class="form-row">
               <section class="offset-1 col-4 md-3 mb-3">
                 <label for="validationDefault03">City</label>
-                <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                <input type="text" class="form-control shadow p-1 mb-5 bg-white rounded" id="validationDefault03" placeholder="City" required>
               </section>
               <section class="col-6 md-3 mb-3">
                 <label for="validationDefault04">State</label>
-                <select class="form-control" name="validationDefault04" id ="Country" >
+                <select class="form-control shadow p-1 mb-5 bg-white rounded" name="validationDefault04" id ="Country" >
                     <option  selected>choose ...</option>
                     <?php
                     $countries = array('BE'=>'Belgium','EN'=>'England','FR'=>'France','MA'=>'Madrid','IND'=>'India');
@@ -108,7 +108,7 @@ function Check_input($data) {
               </section>
                 <section class="offset-1 col-4 md-3 mb-3">
                     <label for ="Topics">Un probleme ?</label>
-                    <select class="form-control" id ="Topics">
+                    <select class="form-control shadow p-1 mb-5 bg-white rounded" id ="Topics">
                         <option  selected>choose ...</option>
                         <?php
                             $Topics = array('Prob'=>'Problems ','Sugg'=>'Suggestion ','Love'=>'Love to share ');
@@ -120,7 +120,7 @@ function Check_input($data) {
                     </select>
                 </section>
                 <section class="Area form-group col-6">
-                    <textarea name="bio" class="form-control" id="" rows="3" max-lenght="50" cols="30" placeholder="Ecrivez ici ..."></textarea>
+                    <textarea name="bio" class="form-control shadow p-1 mb-5 bg-white rounded" id="" rows="3" max-lenght="50" cols="30" placeholder="Ecrivez ici ..."></textarea>
                 </section>
             </section>
             </section>

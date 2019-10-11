@@ -35,3 +35,6 @@
 #### Credit
 
 ##### Author of this Beautiful, Awesome and Amazing README is me [_( Jérémy Englebert)_](https://www.linkedin.com/in/jeremy-englebert/)
+
+
+![Gif for fun](https://media.giphy.com/media/P3WxeWyF8nqXC/giphy.gif "Gif")

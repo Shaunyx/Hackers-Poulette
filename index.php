@@ -3,16 +3,20 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="icon" type="img/png" href="assets/img/Egg-icon.png" alt="icon of eggs">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/Font.css">
 
     <title>Hackers Poulette</title>
   </head>
   <body>
+      <header>
+        <?php include 'nav.php'?>
+      </header>
       <section>
-        <img class="center" src="assets/img/hackers-poulette-logo.png" alt="Logo de l'entrepise Hackers-Poulette">
+        <img class="center" src="assets/img/hackers-poulette-logo.png" alt="Logo of Hackers-Poulette society">
       </section>
       <section class="formulaire">
           <?php include 'form.php'?>

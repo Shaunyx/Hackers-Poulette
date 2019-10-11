@@ -58,7 +58,7 @@ function Check_input($data) {
                 <section class="User col-6 md-4 mb-1">
                 <!---last name & first name--->
                     <label for="validationDefault01">First name<span class="required">*</span></label>
-                    <input type="text" class="form-control shadow p-1 mb-5 bg-white rounded"  value="" id="validationDefault01" placeholder="First name" name="firstname" required>
+                    <input type="text" class="form-control shadow p-1 mb-5 bg-white rounded" alt="Input for Firstname  ?  " value="" id="validationDefault01" placeholder="First name" name="firstname" required>
                     <section class="valid-feedback">
                         Kot kot okaaaaay!
                     </section>
@@ -68,7 +68,7 @@ function Check_input($data) {
                 </section>
                 <section class="User col-6 md-4 mb-3">
                     <label for="validationDefault02">Last name<span class="required">*</span></label>
-                    <input type="text" class="form-control shadow p-1 mb-5 bg-white rounded" value="" id="validationDefault02" placeholder="Last name" name="lastname" required>
+                    <input type="text" class="form-control shadow p-1 mb-5 bg-white rounded" alt="Input for Lastname " value="" id="validationDefault02" placeholder="Last name" name="lastname" required>
                     <section class="valid-feedback">
                         Kot kot okaaaaay!
                     </section>
@@ -80,7 +80,7 @@ function Check_input($data) {
               <!--- Email -->
                 <section class="email  col-12">
                     <label for="validationDefault03">Email<span class="required">*</span></label>
-                    <input class="form-control shadow p-1 mb-5 bg-white rounded" value=""id="validationDefault03" type="text"  placeholder="name@example.com" name="email" required>
+                    <input class="form-control shadow p-1 mb-5 bg-white rounded" value="" alt="Input for Firstname " id="validationDefault03" type="text"  placeholder="name@example.com" name="email" required>
                     <section class="valid-feedback">
                         Kot kot okaaaaay!
                     </section>
@@ -93,7 +93,7 @@ function Check_input($data) {
               <section class="form-row">
                 <section class="col-12 md-12 mb-3">
                     <label for="validationDefault04">Gender<span class="required">*</span></label>
-                        <select class="form-control shadow p-1 mb-5 bg-white rounded" name="Gender" id ="validationDefault04" required>
+                        <select class="form-control shadow p-1 mb-5 bg-white rounded" name="Gender" alt="Input for Gender, male , female , no-binary " id ="validationDefault04" required>
                             <option  selected>choose ...</option>
                             <?php
                                 $Topics = array('male'=>'male ','female'=>'female ','binary'=>'no-binary');
@@ -114,7 +114,7 @@ function Check_input($data) {
             <section class="form-row">
               <section class="offset-1 col-4 md-3 mb-3">
                 <label for="validationDefault05">City<span class="required">*</span></label>
-                <input type="text" class="form-control shadow p-1 mb-5 bg-white rounded" name="validationDefault05" id="validationDefault05" placeholder="City" required>
+                <input type="text" class="form-control shadow p-1 mb-5 bg-white rounded" name="validationDefault05" alt="Input for City " id="validationDefault05" placeholder="City" required>
                 <section class="valid-feedback">
                         Kot kot okaaaaay!
                     </section>
@@ -124,7 +124,7 @@ function Check_input($data) {
               </section>
               <section class="col-6 md-3 mb-3">
                 <label for="validationDefault06">State</label>
-                <select class="form-control shadow p-1 mb-5 bg-white rounded" name="validationDefault06" id ="validationDefault06" >
+                <select class="form-control shadow p-1 mb-5 bg-white rounded" name="validationDefault06"  alt="Input for State , BE , Engl , FR , MA , IND " id ="validationDefault06" >
                     <option  selected>choose ...</option>
                     <?php
                     $countries = array('BE'=>'Belgium','EN'=>'England','FR'=>'France','MA'=>'Madrid','IND'=>'India');
@@ -138,7 +138,7 @@ function Check_input($data) {
               </section>
                 <section class="offset-1 col-4 md-3 mb-3">
                     <label for ="validationDefault07">Un probleme ?</label>
-                    <select class="form-control shadow p-1 mb-5 bg-white rounded" name="validationDefault07" id ="validationDefault07">
+                    <select class="form-control shadow p-1 mb-5 bg-white rounded" name="validationDefault07"  alt="Input for Problems ? problems, suggestion, love" id ="validationDefault07">
                         <option  selected>choose ...</option>
                         <?php
                             $Topics = array('Prob'=>'Problems ','Sugg'=>'Suggestion ','Love'=>'Love to share ');
@@ -150,25 +150,25 @@ function Check_input($data) {
                     </select>
                 </section>
                 <section class="Area  form-group col-6">
-                    <textarea for="validationDefault08" name="bio" class="form-control shadow p-1 mb-5 bg-white rounded" id="validationDefault08" rows="3" max-lenght="50" cols="30" placeholder="Ecrivez ici ..."></textarea>
+                    <textarea for="validationDefault08" name="bio" class="form-control shadow p-1 mb-5 bg-white rounded" alt="Input for Area " id="validationDefault08" rows="3" max-lenght="50" cols="30" placeholder="Ecrivez ici ..."></textarea>
                 </section>
             </section>
             </section>
             <section class="form-group">
               <section class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <input class="form-check-input" type="checkbox" value="" alt="Input for checkbox done ?  " id="invalidCheck" required>
                 <label class="form-check-label" for="invalidCheck">Done ?</label><span class="required">*</span></label>
               </section>
             </section>
             <section class="form-group">
               <section class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <input class="form-check-input" type="checkbox" value="" alt="Input for checkbox Really done ?  " id="invalidCheck2" required>
                 <label class="form-check-label" for="invalidCheck2">Really ?</label><span class="required">*</span></label>
               </section>
             </section>
             <section class="form-group">
               <section class="form-check3">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                <input class="form-check-input" type="checkbox" value="" alt="Input for checkbox ARE YOU SURE  ?  " id="invalidCheck3" required>
                 <label class="form-check-label" for="invalidCheck3">ARE YOU SURE ?<span class="required">*</span></label>
               </section>
             </section>

@@ -6,22 +6,22 @@
 
 #### le but ici est de créer un formulaire & un page de reponse favorable ou non suivant le submit effectué.
 
-#### un peu de visuel
+####  Mockup and construction
 
-![form capture of screen](https://github.com/n48.png "Capture of screen")
+![mockup1](assets/img/mockup1.png "Capture of screen")
 
-![Answer validate of form](https://github.com/n48.png "Capture of screen")
+![mockup2](assets/img/mockup2.png "Capture of screen")
 
-![Answer refuse/error of form](https://github.com/n48.png "Capture of screen")
+![mockup3](assets/img/mockup3.png  "Capture of screen")
 
 
-## [Check here !]() 
+## [Check here !](https://poulette.herokuapp.com/) 
 
-### Mockup and construction
+### Un peu de visuel
 
-![Mockup](https://github.com/n48.png "Form")
-![Mockup](https://github.com/n48.png "Form-Validate")
-![Mockup](https://github.com/n48.png "Form-Error")
+![Visu of Web1](assets/img/visual_web1.png "Form of web")
+![Visu of web2](assets/img/visual_Web2.png "Form of web")
+![Visu Of web3](assets/img/visual_Web3.png "Form of web")
 
 ### This Form is build with 
 #### - Bootstrap
@@ -33,12 +33,6 @@
 ##### It's my first real project with PHP so i tried my best ! _( the best incoming i'm sure !)_ 
 
 
-### Credit
+#### Credit
 
-### all img comes from these one :
-
-#### -
-#### -
-#### -
-
-### Author of this Beautifulf, Awsome and Amazing README is me [_( Jérémy Englebert)_](https://www.linkedin.com/in/jeremy-englebert/)
+##### Author of this Beautiful, Awesome and Amazing README is me [_( Jérémy Englebert)_](https://www.linkedin.com/in/jeremy-englebert/)

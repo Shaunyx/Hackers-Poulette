@@ -4,7 +4,6 @@
 
 #### La société _Hackers Poulette ™_ vend des kits d'accessoires Raspberry Pi
 
-#### le but ici est de créer un formulaire & un page de reponse favorable ou non suivant le submit effectué.
 
 ####  Mockup and construction
 

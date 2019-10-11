@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="Hackers-Poulette" content="La société Hackers Poulette ™ vendent des kits d'accessoires Raspberry Pi, ici se trouve une proposition de formulaire"/>
-    <link rel="icon" type="img/png" href="assets/img/Egg-icon.png" alt="icon of eggs">
+    <link rel="icon" type="img/png" href="assets/img/Egg-icon.png" title="icon of eggs">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -18,7 +18,7 @@
         <?php include 'nav.php'?>
       </header>
       <section>
-        <img class="center" src="assets/img/hackers-poulette-logo.png" alt="Logo of Hackers-Poulette society">
+        <img class="center" src="assets/img/hackers-poulette-logo.png" title="Logo of Hackers-Poulette society">
       </section>
       <section class="formulaire">
           <?php include 'form.php'?>

@@ -6,16 +6,16 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link disabled" alt="Home" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link disabled" title="Home" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" alt="About" href="#">About us</a>
+        <a class="nav-link disabled" title="About" href="#">About us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" alt="Product" href="#">Product</a>
+        <a class="nav-link disabled" title="Product" href="#">Product</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" alt="Meet the team" href="#" tabindex="-1">Meet the team</a>
+        <a class="nav-link disabled" title="Meet the team" href="#" tabindex="-1">Meet the team</a>
       </li>
     </ul>
   </div>
